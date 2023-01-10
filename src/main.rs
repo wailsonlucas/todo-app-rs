@@ -33,7 +33,7 @@ fn main() {
             let file = File::open("./task_list.txt").unwrap();
             let buffer = BufReader::new(&file);
             for line in buffer.lines() {
-                println!("{:?}", line);
+                println!("{:?}", line.unwrap());
             }
 
             // println!("{:?}", buffer);
